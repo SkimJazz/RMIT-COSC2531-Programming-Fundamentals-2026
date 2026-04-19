@@ -1,4 +1,4 @@
-# Week 5 Assessment 1A - Warehouse App | RMIT COSC2531 Programming FuNdamentals
+# Week 5 Assessment 1A - Warehouse App | RMIT COSC2531 Programming Fundamentals
 
 ## DESCRIPTION
 

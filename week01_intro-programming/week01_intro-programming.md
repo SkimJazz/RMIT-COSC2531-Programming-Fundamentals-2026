@@ -1,4 +1,4 @@
-# Week 1: Introducing programming
+# Week 1: Introducing programming | RMIT COSC2531 Programming Fundamentals
 
 ## 1.0.0 Week overview: Introducing programming
 
