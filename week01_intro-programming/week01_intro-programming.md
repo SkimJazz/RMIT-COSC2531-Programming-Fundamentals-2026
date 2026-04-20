@@ -540,7 +540,7 @@ Most programming errors fall in to one of three main categories:
 2. Run-time errors
 3. Logic errors
 
-Syntax errors
+**Syntax errors**
 
 Syntax errors are errors that produce an error message as a result of incorrectly written
 instructions. They are detected by the language editor, interpreter or compiler when executed. Try
