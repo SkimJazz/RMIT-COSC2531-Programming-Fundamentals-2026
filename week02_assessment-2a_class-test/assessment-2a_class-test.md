@@ -17,3 +17,13 @@ therefore have 45 minutes from starting the quiz to completing the entire quiz. 
 all the quiz sections and upload your code snippet within the allocated time.
 
 ## PROBLEM BRIEF
+
+## Hints for Quiz Questions
+
+- Variables
+- Operators
+- Screen output
+- User input
+- String Methods
+- List
+- If Statements

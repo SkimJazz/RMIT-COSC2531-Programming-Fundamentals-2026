@@ -614,13 +614,17 @@ Earlier this week, you learnt about the importance of considering the sequence o
 as they determine how your program will be executed. In this task you’ll learn how to think about
 your programs’ structure at another level: algorithms.
 
-Watch the video
-
 #### What's an algorithm? (4:57)
 
 The video below explains what algorithms are, using an everyday example: Please watch the video Key
 takeaways:
 
+Watch the video
+
+**Key takeaways:**
+
+- Pseudo = [RESEMBLING HUMAN LANGUAGE]
+- Code = [RESEMBLING PROGRAMMING LANGUAGE]
 - Algorithms are a step-by-step set of instructions for solving a problem.
 - Pseudo-code refers to code that represents human language but which resembles programming
   language.
@@ -632,9 +636,9 @@ specific to a particular programming language. Look at the pseudo-code example b
 represents an algorithm for outputting the sum of two values entered by the user:
 
 ```py
-# Take two numerical inputs from user and store individually
-# Calculate the sum of the two inputs
-# Display the answer
+# 1 Take two numerical inputs from user and store individually
+# 2 Calculate the sum of the two inputs
+# 3 Display the answer
 ```
 
 Notice how even a trivial task such as calculating the sum of two values involves three steps! The
@@ -683,7 +687,8 @@ sys.stdout.write(str(num1+num2))
 ```py
 csv_line=input("Enter two numbers separated by commas (no spaces)': ").split(",")
 num1=int(csv_line[0])
-num2=int(csv_line[1]) print(num1+num2)
+num2=int(csv_line[1])
+print(num1+num2)
 ```
 
 As can be seen from the above examples, there can be multiple variations in the interpretation of an
@@ -691,7 +696,19 @@ algorithm, so long as each implementation meets the requirements of that algorit
 
 ### 1.3.2 Everyday algorithms
 
-> Add garbage here
+#### Write an algorithm 
+
+In this task, you’ll practice writing an algorithm that solves the following problem:
+
+How to get from RMIT University at 124 La Trobe Street to Flinders Street Station in Melbourne’s
+CBD.
+
+Using pseudo-code, and the locations of the above points, write an algorithm that would direct a
+pedestrian from RMIT University to Flinders St. Station, then share your instructions in the
+discussion board below. You will probably need an online mapping tool to help you.
+
+You could attempt to write an algorithm for the most direct route, but this might make for a more
+complicated algorithm!
 
 ### 1.3.3 Analysing algorithims
 
@@ -719,10 +736,10 @@ below (in a notepad or Word document) to record your findings.
 
 | Initial Condition | First algorithm to finish | Last algorithm to finish |
 | ----------------- | ------------------------- | ------------------------ |
-| Random            |                           |                          |
-| Nearly sorted     |                           |                          |
-| Reversed          |                           |                          |
-| Few unique        |                           |                          |
+| Random            |           Heap            |       Selection          |
+| Nearly sorted     |         Insertion         |       Selection          |
+| Reversed          |           Shell           |       Selection          |
+| Few unique        |            Heap           |       Selection          |
 
 As you can see, each algorithm solves the same problem, but arrives at the solution differently and
 in doing so, some complete the task more quickly. However, different algorithms are more successful
@@ -746,36 +763,50 @@ encounter when studying this course, and share a plan for success with the class
 
 ### 1.4.1 Attention to detail
 
-> Add garbage here
+#### Find Errors
 
-### 1.4.2 Trace tables
+Example 1:
 
-#### OVERVIEW - Recording the logic of a program
+```py
+print(“Hello”)    
+# Output: Commers are not used in Python, so this will cause an error 
+print(“World”)    
+# Output: Again, the use of commers will cause an error
+```
 
-While the programs you have worked with so far don’t contain a large number of functions, as your
-programs develop, it will become increasingly important to trace through them, keeping track of the
-operations and the changes to their values. In this task, you’ll learn how to use trace tables to
-keep track of your programs' content.
+Example 2:
 
-Trace tables are a way of recoding the steps in a program, any expected inputs and outputs. Their
-structure can vary depending on the preferences of the programmer, but here is an example using the
-program you created earlier this week:
+```py
+print(''Hello'')
+# Output: The use of two single quotation marks will cause an error, as the
+# interpreter will not know where the string starts and ends      
+print(''World'')
+# Output: Same as above
+```
 
-| Step | Statement                          | Notes            |
-| ---- | ---------------------------------- | ---------------- |
-| 1    | print("Hi world from the program") | Displays message |
-| 2    | print("This is the second line")   | Displays message |
+Example 3:
 
-We’ll sometimes use trace tables (or a version of them) throughout this course to demonstrate the
-logic behind the programs you create. When logic errors occur (i.e., ones that do not necessarily
-show errors) creating trace tables can be an invaluable exercise.
+```py
+print(``Hello'')
+# Output: The use of backticks will cause an error, as they are not used in Python to denote strings.
+print(``World'')
+# Output: Same as above
+```
 
-The table itself can be created on a spreadsheet or simply on a piece of paper. It is also possible
-to add statements to display the contents of variables, which can be convenient. However, doing so
-clutters the program when you need it to be clutter-free the most; when you can’t figure out a logic
-error.
+Example 4:
 
-### 1.4.3 Investigating error messages
+```py
+  print("Hello")
+# Output: The indentation before the print statement will cause an error, as Python uses indentation 
+# to denote blocks of code. In this case, the interpreter will not know where the block of code starts
+#  and ends.
+print("World")
+# Output: The lack of indentation before this print statement will cause an error, as it will be
+# interpreted as being outside the block of code that starts with the first print statement. This will
+# cause an error as the interpreter will not know where the block of code starts and ends.
+```
+
+### 1.4.2 Investigating error messages
 
 #### OVERVIEW - Making sense of errors
 
