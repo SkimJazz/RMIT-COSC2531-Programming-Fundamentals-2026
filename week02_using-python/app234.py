@@ -79,3 +79,16 @@
 # sys.stdout.write("Hello " + name + ", you were born in " + str(year_of_birth) + " and you are " + str(2026 - year_of_birth) + " years old.\n")
 # sys.stdout.flush()
 
+import sys
+
+is_weekday = False
+is_rainy = False
+
+if is_weekday and not is_rainy:
+    sys.stdout.write("Let's go to RMIT.")
+if is_weekday and is_rainy:
+    sys.stdout.write("Let's study from home.")
+if not is_weekday and not is_rainy:
+    sys.stdout.write("Let's go to the market.")
+if not is_weekday and is_rainy:
+    sys.stdout.write("Let's s bake something.")
